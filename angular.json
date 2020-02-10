@@ -118,8 +118,17 @@
               "devServerTarget": "hotel:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/hotel",
+            "netlifyToken": "",
+            "siteId": "59467b64-b54c-4bc0-a8a6-a1c529f73e25"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "hotel"
 }
